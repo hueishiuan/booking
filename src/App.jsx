@@ -1,5 +1,5 @@
 import { useState, Fragment } from 'react'
-import { Check, Clock3, Droplets, HandHeart, Sparkles } from 'lucide-react'
+import { Check, Clock3, Droplets, HandHeart, Sparkles, User } from 'lucide-react'
 import './index.css'
 
 // Mock Data
@@ -76,8 +76,8 @@ function App() {
             onClick={() => setSelectedStylist(stylist)}
             style={{ textAlign: 'center', padding: '24px 12px' }}
           >
-            <div className="avatar-circle" style={{ width: '64px', height: '64px', margin: '0 auto 12px auto' }}>
-              <img src={stylist.image} alt={stylist.name} />
+            <div className="avatar-circle" style={{ width: '64px', height: '64px', margin: '0 auto 12px auto', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(79, 58, 43, 0.05)' }}>
+              <User size={32} strokeWidth={1.5} color="var(--primary-color)" />
             </div>
             <h3 style={{ fontSize: '15px', fontWeight: '600' }}>{stylist.name}</h3>
             <p style={{ fontSize: '12px', color: 'var(--text-secondary)' }}>{stylist.role}</p>
