@@ -70,6 +70,23 @@ body {
   gap: 12px;
 }
 
+.stylist-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 12px auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(79, 58, 43, 0.05);
+  color: var(--primary-color);
+}
+
+.card.selected .stylist-icon {
+  background-color: rgba(255, 255, 255, 0.18);
+  color: #fff !important;
+}
+
 @media (min-width: 768px) {
   .stylist-grid {
     grid-template-columns: repeat(3, 1fr);
